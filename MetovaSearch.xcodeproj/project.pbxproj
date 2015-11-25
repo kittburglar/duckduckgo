@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F815D4781C0677B5000EBA5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D4771C0677B5000EBA5B /* main.m */; };
+		F815D47B1C0677B5000EBA5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D47A1C0677B5000EBA5B /* AppDelegate.m */; };
+		F815D47E1C0677B5000EBA5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D47D1C0677B5000EBA5B /* ViewController.m */; };
+		F815D4811C0677B5000EBA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F815D47F1C0677B5000EBA5B /* Main.storyboard */; };
+		F815D4841C0677B5000EBA5B /* MetovaSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F815D4821C0677B5000EBA5B /* MetovaSearch.xcdatamodeld */; };
+		F815D4861C0677B6000EBA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F815D4851C0677B6000EBA5B /* Assets.xcassets */; };
+		F815D4891C0677B6000EBA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F815D4871C0677B6000EBA5B /* LaunchScreen.storyboard */; };
+		F815D4941C0677BB000EBA5B /* MetovaSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D4931C0677BB000EBA5B /* MetovaSearchTests.m */; };
+		F815D49F1C0677BC000EBA5B /* MetovaSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D49E1C0677BC000EBA5B /* MetovaSearchUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F815D4901C0677BB000EBA5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815D46B1C0677B4000EBA5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F815D4721C0677B5000EBA5B;
+			remoteInfo = MetovaSearch;
+		};
+		F815D49B1C0677BC000EBA5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815D46B1C0677B4000EBA5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F815D4721C0677B5000EBA5B;
+			remoteInfo = MetovaSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F815D4731C0677B5000EBA5B /* MetovaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetovaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F815D4771C0677B5000EBA5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F815D4791C0677B5000EBA5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F815D47A1C0677B5000EBA5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F815D47C1C0677B5000EBA5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F815D47D1C0677B5000EBA5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F815D4801C0677B5000EBA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F815D4831C0677B5000EBA5B /* MetovaSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetovaSearch.xcdatamodel; sourceTree = "<group>"; };
+		F815D4851C0677B6000EBA5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F815D4881C0677B6000EBA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F815D48A1C0677B6000EBA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F815D48F1C0677BB000EBA5B /* MetovaSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetovaSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F815D4931C0677BB000EBA5B /* MetovaSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetovaSearchTests.m; sourceTree = "<group>"; };
+		F815D4951C0677BB000EBA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F815D49A1C0677BC000EBA5B /* MetovaSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetovaSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F815D49E1C0677BC000EBA5B /* MetovaSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetovaSearchUITests.m; sourceTree = "<group>"; };
+		F815D4A01C0677BD000EBA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F815D4701C0677B5000EBA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F815D48C1C0677BB000EBA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F815D4971C0677BC000EBA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F815D46A1C0677B4000EBA5B = {
+			isa = PBXGroup;
+			children = (
+				F815D4751C0677B5000EBA5B /* MetovaSearch */,
+				F815D4921C0677BB000EBA5B /* MetovaSearchTests */,
+				F815D49D1C0677BC000EBA5B /* MetovaSearchUITests */,
+				F815D4741C0677B5000EBA5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F815D4741C0677B5000EBA5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F815D4731C0677B5000EBA5B /* MetovaSearch.app */,
+				F815D48F1C0677BB000EBA5B /* MetovaSearchTests.xctest */,
+				F815D49A1C0677BC000EBA5B /* MetovaSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F815D4751C0677B5000EBA5B /* MetovaSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F815D4791C0677B5000EBA5B /* AppDelegate.h */,
+				F815D47A1C0677B5000EBA5B /* AppDelegate.m */,
+				F815D47C1C0677B5000EBA5B /* ViewController.h */,
+				F815D47D1C0677B5000EBA5B /* ViewController.m */,
+				F815D47F1C0677B5000EBA5B /* Main.storyboard */,
+				F815D4851C0677B6000EBA5B /* Assets.xcassets */,
+				F815D4871C0677B6000EBA5B /* LaunchScreen.storyboard */,
+				F815D48A1C0677B6000EBA5B /* Info.plist */,
+				F815D4821C0677B5000EBA5B /* MetovaSearch.xcdatamodeld */,
+				F815D4761C0677B5000EBA5B /* Supporting Files */,
+			);
+			path = MetovaSearch;
+			sourceTree = "<group>";
+		};
+		F815D4761C0677B5000EBA5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F815D4771C0677B5000EBA5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F815D4921C0677BB000EBA5B /* MetovaSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				F815D4931C0677BB000EBA5B /* MetovaSearchTests.m */,
+				F815D4951C0677BB000EBA5B /* Info.plist */,
+			);
+			path = MetovaSearchTests;
+			sourceTree = "<group>";
+		};
+		F815D49D1C0677BC000EBA5B /* MetovaSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F815D49E1C0677BC000EBA5B /* MetovaSearchUITests.m */,
+				F815D4A01C0677BD000EBA5B /* Info.plist */,
+			);
+			path = MetovaSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F815D4721C0677B5000EBA5B /* MetovaSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F815D4A31C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearch" */;
+			buildPhases = (
+				F815D46F1C0677B5000EBA5B /* Sources */,
+				F815D4701C0677B5000EBA5B /* Frameworks */,
+				F815D4711C0677B5000EBA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetovaSearch;
+			productName = MetovaSearch;
+			productReference = F815D4731C0677B5000EBA5B /* MetovaSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F815D48E1C0677BB000EBA5B /* MetovaSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F815D4A61C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearchTests" */;
+			buildPhases = (
+				F815D48B1C0677BB000EBA5B /* Sources */,
+				F815D48C1C0677BB000EBA5B /* Frameworks */,
+				F815D48D1C0677BB000EBA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F815D4911C0677BB000EBA5B /* PBXTargetDependency */,
+			);
+			name = MetovaSearchTests;
+			productName = MetovaSearchTests;
+			productReference = F815D48F1C0677BB000EBA5B /* MetovaSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F815D4991C0677BC000EBA5B /* MetovaSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F815D4A91C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearchUITests" */;
+			buildPhases = (
+				F815D4961C0677BC000EBA5B /* Sources */,
+				F815D4971C0677BC000EBA5B /* Frameworks */,
+				F815D4981C0677BC000EBA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F815D49C1C0677BC000EBA5B /* PBXTargetDependency */,
+			);
+			name = MetovaSearchUITests;
+			productName = MetovaSearchUITests;
+			productReference = F815D49A1C0677BC000EBA5B /* MetovaSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F815D46B1C0677B4000EBA5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kittiphong Xayasane";
+				TargetAttributes = {
+					F815D4721C0677B5000EBA5B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					F815D48E1C0677BB000EBA5B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = F815D4721C0677B5000EBA5B;
+					};
+					F815D4991C0677BC000EBA5B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = F815D4721C0677B5000EBA5B;
+					};
+				};
+			};
+			buildConfigurationList = F815D46E1C0677B4000EBA5B /* Build configuration list for PBXProject "MetovaSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F815D46A1C0677B4000EBA5B;
+			productRefGroup = F815D4741C0677B5000EBA5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F815D4721C0677B5000EBA5B /* MetovaSearch */,
+				F815D48E1C0677BB000EBA5B /* MetovaSearchTests */,
+				F815D4991C0677BC000EBA5B /* MetovaSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F815D4711C0677B5000EBA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815D4891C0677B6000EBA5B /* LaunchScreen.storyboard in Resources */,
+				F815D4861C0677B6000EBA5B /* Assets.xcassets in Resources */,
+				F815D4811C0677B5000EBA5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F815D48D1C0677BB000EBA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F815D4981C0677BC000EBA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F815D46F1C0677B5000EBA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815D47E1C0677B5000EBA5B /* ViewController.m in Sources */,
+				F815D47B1C0677B5000EBA5B /* AppDelegate.m in Sources */,
+				F815D4781C0677B5000EBA5B /* main.m in Sources */,
+				F815D4841C0677B5000EBA5B /* MetovaSearch.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F815D48B1C0677BB000EBA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815D4941C0677BB000EBA5B /* MetovaSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F815D4961C0677BC000EBA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815D49F1C0677BC000EBA5B /* MetovaSearchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F815D4911C0677BB000EBA5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F815D4721C0677B5000EBA5B /* MetovaSearch */;
+			targetProxy = F815D4901C0677BB000EBA5B /* PBXContainerItemProxy */;
+		};
+		F815D49C1C0677BC000EBA5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F815D4721C0677B5000EBA5B /* MetovaSearch */;
+			targetProxy = F815D49B1C0677BC000EBA5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F815D47F1C0677B5000EBA5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F815D4801C0677B5000EBA5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F815D4871C0677B6000EBA5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F815D4881C0677B6000EBA5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F815D4A11C0677BD000EBA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F815D4A21C0677BD000EBA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F815D4A41C0677BD000EBA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MetovaSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kit.MetovaSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F815D4A51C0677BD000EBA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MetovaSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kit.MetovaSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F815D4A71C0677BD000EBA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MetovaSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kit.MetovaSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetovaSearch.app/MetovaSearch";
+			};
+			name = Debug;
+		};
+		F815D4A81C0677BD000EBA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MetovaSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kit.MetovaSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetovaSearch.app/MetovaSearch";
+			};
+			name = Release;
+		};
+		F815D4AA1C0677BD000EBA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MetovaSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kit.MetovaSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MetovaSearch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F815D4AB1C0677BD000EBA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MetovaSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kit.MetovaSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MetovaSearch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F815D46E1C0677B4000EBA5B /* Build configuration list for PBXProject "MetovaSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815D4A11C0677BD000EBA5B /* Debug */,
+				F815D4A21C0677BD000EBA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F815D4A31C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815D4A41C0677BD000EBA5B /* Debug */,
+				F815D4A51C0677BD000EBA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F815D4A61C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815D4A71C0677BD000EBA5B /* Debug */,
+				F815D4A81C0677BD000EBA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F815D4A91C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815D4AA1C0677BD000EBA5B /* Debug */,
+				F815D4AB1C0677BD000EBA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F815D4821C0677B5000EBA5B /* MetovaSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F815D4831C0677B5000EBA5B /* MetovaSearch.xcdatamodel */,
+			);
+			currentVersion = F815D4831C0677B5000EBA5B /* MetovaSearch.xcdatamodel */;
+			path = MetovaSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F815D46B1C0677B4000EBA5B /* Project object */;
+}
