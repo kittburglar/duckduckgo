@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4F3833AE3CEF27B79C88136 /* libPods-MetovaSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581322E650E0DB882951FB44 /* libPods-MetovaSearch.a */; };
 		F815D4781C0677B5000EBA5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D4771C0677B5000EBA5B /* main.m */; };
 		F815D47B1C0677B5000EBA5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D47A1C0677B5000EBA5B /* AppDelegate.m */; };
 		F815D47E1C0677B5000EBA5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D47D1C0677B5000EBA5B /* ViewController.m */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CD4D8F1E8063E116A11BBFE /* Pods-MetovaSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaSearch/Pods-MetovaSearch.release.xcconfig"; sourceTree = "<group>"; };
+		581322E650E0DB882951FB44 /* libPods-MetovaSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetovaSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9107197384CF2277A5A8A173 /* Pods-MetovaSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaSearch/Pods-MetovaSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		F815D4731C0677B5000EBA5B /* MetovaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetovaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F815D4771C0677B5000EBA5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F815D4791C0677B5000EBA5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F3833AE3CEF27B79C88136 /* libPods-MetovaSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B27BC66DA82272C35D40549 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9107197384CF2277A5A8A173 /* Pods-MetovaSearch.debug.xcconfig */,
+				3CD4D8F1E8063E116A11BBFE /* Pods-MetovaSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8489AFBAF7CA9FBE26987E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				581322E650E0DB882951FB44 /* libPods-MetovaSearch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F815D46A1C0677B4000EBA5B = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,8 @@
 				F815D4921C0677BB000EBA5B /* MetovaSearchTests */,
 				F815D49D1C0677BC000EBA5B /* MetovaSearchUITests */,
 				F815D4741C0677B5000EBA5B /* Products */,
+				1B27BC66DA82272C35D40549 /* Pods */,
+				8489AFBAF7CA9FBE26987E4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F815D4A31C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearch" */;
 			buildPhases = (
+				5223942795E20A8A28B26568 /* Check Pods Manifest.lock */,
 				F815D46F1C0677B5000EBA5B /* Sources */,
 				F815D4701C0677B5000EBA5B /* Frameworks */,
 				F815D4711C0677B5000EBA5B /* Resources */,
+				CE35960A02343400BB3F97B0 /* Embed Pods Frameworks */,
+				9F86BEDD6ACFE8EABFD372E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5223942795E20A8A28B26568 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F86BEDD6ACFE8EABFD372E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetovaSearch/Pods-MetovaSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE35960A02343400BB3F97B0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetovaSearch/Pods-MetovaSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F815D46F1C0677B5000EBA5B /* Sources */ = {
@@ -415,6 +490,7 @@
 		};
 		F815D4A41C0677BD000EBA5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9107197384CF2277A5A8A173 /* Pods-MetovaSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MetovaSearch/Info.plist;
@@ -426,6 +502,7 @@
 		};
 		F815D4A51C0677BD000EBA5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD4D8F1E8063E116A11BBFE /* Pods-MetovaSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MetovaSearch/Info.plist;
@@ -502,6 +579,7 @@
 				F815D4A51C0677BD000EBA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F815D4A61C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +588,7 @@
 				F815D4A81C0677BD000EBA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F815D4A91C0677BD000EBA5B /* Build configuration list for PBXNativeTarget "MetovaSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +597,7 @@
 				F815D4AB1C0677BD000EBA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
