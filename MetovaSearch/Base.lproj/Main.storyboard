@@ -39,7 +39,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J51-bK-IdB"/>
-                                    <segue destination="XpM-SB-1lx" kind="push" id="s5C-px-NkR"/>
+                                    <segue destination="XpM-SB-1lx" kind="push" identifier="showDetailSegue" id="s5C-px-NkR"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-i8-hPg">
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-1744" y="145"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="ba9-ko-NHB">
             <objects>
-                <viewController id="XpM-SB-1lx" sceneMemberID="viewController">
+                <viewController id="XpM-SB-1lx" customClass="ResultsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4q6-fd-C5k"/>
                         <viewControllerLayoutGuide type="bottom" id="nfL-3i-rdJ"/>
@@ -74,9 +74,37 @@
                     <view key="view" contentMode="scaleToFill" id="F8p-iR-prz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uus-wn-KDF">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testButton:" destination="XpM-SB-1lx" eventType="touchUpInside" id="T7M-Ef-s1b"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QbQ-Oi-dlu">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XpM-SB-1lx" id="2VE-CR-IVC"/>
+                                    <outlet property="delegate" destination="XpM-SB-1lx" id="izd-4z-CBn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QbQ-Oi-dlu" firstAttribute="width" secondItem="F8p-iR-prz" secondAttribute="width" id="Qwk-eS-ctG"/>
+                            <constraint firstItem="QbQ-Oi-dlu" firstAttribute="centerY" secondItem="F8p-iR-prz" secondAttribute="centerY" id="Rha-xo-28a"/>
+                            <constraint firstItem="uus-wn-KDF" firstAttribute="centerX" secondItem="F8p-iR-prz" secondAttribute="centerX" id="cfn-TX-bWw"/>
+                            <constraint firstItem="uus-wn-KDF" firstAttribute="centerY" secondItem="F8p-iR-prz" secondAttribute="centerY" id="sEf-u4-TbM"/>
+                            <constraint firstItem="QbQ-Oi-dlu" firstAttribute="centerX" secondItem="F8p-iR-prz" secondAttribute="centerX" id="yD1-HJ-wpa"/>
+                            <constraint firstItem="QbQ-Oi-dlu" firstAttribute="height" secondItem="F8p-iR-prz" secondAttribute="height" id="ynU-QU-gUb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0GN-Ho-N0M"/>
+                    <connections>
+                        <outlet property="resultTableView" destination="QbQ-Oi-dlu" id="snP-Nj-sG5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0W-z3-7Mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

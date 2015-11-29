@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "ResultsViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showDetailSegue"]){
+        ResultsViewController *controller = (ResultsViewController *)segue.destinationViewController;
+        controller.searchResults = self.searchResults;
+    }
+}
+
+ 
 - (IBAction)submitButtonAction:(id)sender {
     // 1
     NSString *string = [NSString stringWithFormat:@"http://api.duckduckgo.com/?q=DuckDuckGo&format=json"];
@@ -37,8 +47,9 @@
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         // 3
-        NSDictionary *dict = (NSDictionary *)responseObject;
-        NSLog(@"JSON Retrieved: %@", dict);
+        self.searchResults = (NSDictionary *)responseObject;
+        NSLog(@"JSON Retrieved: %@", self.searchResults);
+        [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         

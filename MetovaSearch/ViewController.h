@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ResultsViewController.h"
 
 @interface ViewController : UIViewController
 
+@property(nonatomic) NSDictionary *searchResults;
 
 @end
 
