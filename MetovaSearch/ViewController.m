@@ -19,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x267CB0);
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +41,7 @@
  
 - (IBAction)submitButtonAction:(id)sender {
     // 1
-    NSString *string = [NSString stringWithFormat:@"http://api.duckduckgo.com/?q=DuckDuckGo&format=json"];
+    NSString *string = [NSString stringWithFormat:@"http://api.duckduckgo.com/?q=%@&format=json", self.textField.text];
     NSURL *url = [NSURL URLWithString:string];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     

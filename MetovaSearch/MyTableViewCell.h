@@ -10,5 +10,7 @@
 
 @interface MyTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *urlLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
