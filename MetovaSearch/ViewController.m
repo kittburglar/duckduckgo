@@ -40,33 +40,25 @@
 
  
 - (IBAction)submitButtonAction:(id)sender {
-    // 1
+    
+    //Making url request
     NSString *string = [NSString stringWithFormat:@"http://api.duckduckgo.com/?q=%@&format=json", self.textField.text];
     NSURL *url = [NSURL URLWithString:string];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    // 2
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     operation.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/x-javascript"];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        // 3
-        //self.searchResults = (NSDictionary *)responseObject;
         NSLog(@"JSON Retrieved: %@", self.searchResults);
         UIStoryboard * storyboard = self.storyboard;
-        //NSString * storyboardName = [storyboard valueForKey:@"name"];
-        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
         ResultsViewController *resultsVC = (ResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"ResultsViewController"];
         resultsVC.searchResults = (NSDictionary *)responseObject;
         [self.navigationController pushViewController:resultsVC animated:YES];
-        //[self presentModalViewController:resultsVC animated:YES];
-        //[self performSegueWithIdentifier:@"showDetailSegue" sender:self];
-        
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        // 4
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Search Results"
                                                             message:[error localizedDescription]
                                                            delegate:nil
@@ -75,7 +67,6 @@
         [alertView show];
     }];
     
-    // 5
     [operation start];
 }
 
