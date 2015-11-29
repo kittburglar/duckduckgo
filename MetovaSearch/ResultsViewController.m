@@ -8,6 +8,7 @@
 
 #import "ResultsViewController.h"
 
+
 @interface ResultsViewController ()
 
 @end
@@ -44,7 +45,7 @@
     // Number of rows is the number of time zones in the region for the specified section.
     
     NSLog(@"My data is: %@", self.searchResults);
-    return [self.searchResults count];
+    return [[self.searchResults valueForKeyPath:@"RelatedTopics.Text"] count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,15 +55,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Helllllo");
+    
     static NSString *MyIdentifier = @"MyTableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:MyIdentifier];
+        cell = [[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:MyIdentifier];
     }
+
     //int playerCount = lroundf([[[self.searchResultsArray objectAtIndex:indexPath.row] valueForKey:@"playercount"] floatValue]);
     
     
-    cell.text = [NSString stringWithFormat:@"%@", [self.searchResultsArray objectAtIndex:indexPath.row]];
+    cell.titleLabel.text = [NSString stringWithFormat:@"%@", [[self.searchResults valueForKeyPath:@"RelatedTopics.Text"] objectAtIndex:indexPath.row]];
+    
+    NSLog(@"Text is: %@", [[self.searchResults valueForKeyPath:@"RelatedTopics.Text"] objectAtIndex:indexPath.row]);
     
     //cell.dateLabel.text = [[self.myObject objectAtIndex:indexPath.row] valueForKey:@"gametime"];
     //cell.playerLabel.text = [NSString stringWithFormat:@"Open Spots: %d", playerCount];

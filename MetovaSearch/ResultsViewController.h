@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyTableViewCell.h"
 
 @interface ResultsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *resultTableView;

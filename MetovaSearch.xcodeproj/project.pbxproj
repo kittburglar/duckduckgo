@@ -18,6 +18,7 @@
 		F815D4941C0677BB000EBA5B /* MetovaSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D4931C0677BB000EBA5B /* MetovaSearchTests.m */; };
 		F815D49F1C0677BC000EBA5B /* MetovaSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D49E1C0677BC000EBA5B /* MetovaSearchUITests.m */; };
 		F815D4B21C0793D9000EBA5B /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815D4B11C0793D8000EBA5B /* ResultsViewController.m */; };
+		F8D6EF141C0B26B400566934 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D6EF131C0B26B400566934 /* MyTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		F815D4A01C0677BD000EBA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F815D4B01C0793D8000EBA5B /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		F815D4B11C0793D8000EBA5B /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		F8D6EF121C0B26B400566934 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		F8D6EF131C0B26B400566934 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				F815D47D1C0677B5000EBA5B /* ViewController.m */,
 				F815D4B01C0793D8000EBA5B /* ResultsViewController.h */,
 				F815D4B11C0793D8000EBA5B /* ResultsViewController.m */,
+				F8D6EF121C0B26B400566934 /* MyTableViewCell.h */,
+				F8D6EF131C0B26B400566934 /* MyTableViewCell.m */,
 				F815D47F1C0677B5000EBA5B /* Main.storyboard */,
 				F815D4851C0677B6000EBA5B /* Assets.xcassets */,
 				F815D4871C0677B6000EBA5B /* LaunchScreen.storyboard */,
@@ -356,6 +361,7 @@
 				F815D47E1C0677B5000EBA5B /* ViewController.m in Sources */,
 				F815D47B1C0677B5000EBA5B /* AppDelegate.m in Sources */,
 				F815D4781C0677B5000EBA5B /* main.m in Sources */,
+				F8D6EF141C0B26B400566934 /* MyTableViewCell.m in Sources */,
 				F815D4841C0677B5000EBA5B /* MetovaSearch.xcdatamodeld in Sources */,
 				F815D4B21C0793D9000EBA5B /* ResultsViewController.m in Sources */,
 			);

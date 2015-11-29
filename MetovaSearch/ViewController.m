@@ -47,9 +47,17 @@
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         // 3
-        self.searchResults = (NSDictionary *)responseObject;
+        //self.searchResults = (NSDictionary *)responseObject;
         NSLog(@"JSON Retrieved: %@", self.searchResults);
-        [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
+        UIStoryboard * storyboard = self.storyboard;
+        //NSString * storyboardName = [storyboard valueForKey:@"name"];
+        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        ResultsViewController *resultsVC = (ResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"ResultsViewController"];
+        resultsVC.searchResults = (NSDictionary *)responseObject;
+        [self.navigationController pushViewController:resultsVC animated:YES];
+        //[self presentModalViewController:resultsVC animated:YES];
+        //[self performSegueWithIdentifier:@"showDetailSegue" sender:self];
+        
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
